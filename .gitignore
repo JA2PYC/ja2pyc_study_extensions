@@ -1,0 +1,53 @@
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
+
+# Node.js (확장 프로그램에 npm을 사용하는 경우)
+node_modules/
+dist/
+build/
+
+# VS Code 설정 파일
+.vscode/
+*.code-workspace
+
+# OS별 불필요한 파일
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 로그 파일
+*.log
+
+# 환경 변수 파일 (API 키 등을 포함하는 경우)
+.env
+.env.local
+.env.*
+
+# 크롬 확장 프로그램 캐시 (개발자 모드 캐시 방지용)
+chrome-extension-*
+
+# 압축 파일 및 백업 파일
+*.zip
+*.tar.gz
+*.bak
