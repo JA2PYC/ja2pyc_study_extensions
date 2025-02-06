@@ -1,11 +1,17 @@
 {
-    "manifest_version": 3,
-    "name": "Hello World Extension",
-    "version": "1.0",
-    "description": "A simple Chrome extension that shows 'Hello, World!'",
-    "action": {
-      "default_popup": "popup.html"
-    },
-    "permissions": []
-  }
-  
+  "manifest_version": 3,
+  "name": "게시글 목록 스크래퍼",
+  "version": "1.0",
+  "description": "현재 페이지에서 게시글 목록을 가져옵니다.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://dpg.danawa.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://dpg.danawa.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
