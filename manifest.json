@@ -1,16 +1,11 @@
 {
-  "manifest_version": 3,
-  "name": "게시글 목록 스크래퍼",
+  "name": "My Extension",
   "version": "1.0",
+  "manifest_version": 3,
   "description": "현재 페이지에서 게시글 목록을 가져옵니다.",
-  "permissions": ["activeTab", "scripting"],
-  "host_permissions": ["https://dpg.danawa.com/*"],
-  "action": {
-    "default_popup": "popup.html"
-  },
   "content_scripts": [
     {
-      "matches": ["https://dpg.danawa.com/*"],
+      "matches": ["https://dpg.danawa.com/news/view*"],
       "js": ["content.js"]
     }
   ]
